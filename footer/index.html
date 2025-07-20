@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Footer for Bunny Developers' Quick Quiz game. Includes social media links and copyright information.">
+  <meta name="keywords" content="footer, Bunny Developers, Quick Quiz, social media">
+  <meta name="author" content="Bunny Developers">
+  <link rel="icon" type="image/x-icon" href="/img/code-master.jpg">
+  <link rel="stylesheet" href="footer.css">
+  <title></title>
+</head>
+
+
+<body>
+  <style>
+    
+
+:root {
+    --back-color: #161d27;
+    --button-color: #f0db4f;
+    --footer-text-color: lemonchiffon;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures body takes full height */
+    margin: 0;
+    
+}
+
+
+footer {
+    background-color: var(--back-color);
+    color: var(--footer-text-color);
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    position: sticky; /* Makes footer stick to bottom */
+    bottom: 0; /* Aligns it at the bottom */
+}
+
+.footer-flex {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.footer-icons {
+    display: flex; 
+    justify-content: space-between; 
+    gap :15px; /* space between icons */
+}
+
+footer .footer-flex .footer-icons a img {
+    width :30px; /* small size for icons */
+    height:auto; 
+}
+
+p {
+    margin :0; 
+    font-weight:bold; 
+    font-size :20px; /* Adjusted for better readability */
+}
+
+@media (max-width :768px) {
+    h1 { font-size :4rem; } /* Responsive heading size */
+    p { font-size :16px; } /* Smaller font size for mobile */
+    .footer-flex { flex-direction :column; align-items:center; }
+    .footer-icons { margin-top :10px; }
+}
+
+  </style>
+
+  <footer>
+    <div class="footer-flex">
+      <p>&copy; 2024 <a style="color: whitesmoke" href="https://github.com/Bunny-Developers">Bunny</a> Developers</p>
+      <div class="footer-icons">
+        <a href="https://www.facebook.com/profile.php?id=100064937792974"><img src="/img/fb-icon.png" alt="Facebook"></a>
+        <a href="https://youtube.com/@hillaryotieno-b7s?si=UO0aKHpw9BvQE02D"><img src="/img/yt-icon.png" alt="YouTube"></a>
+        <a href="https://www.linkedin.com/in/hillary-okoth-38a9a6268?trk=contact-info"><img src="/img/ln-icon.png" alt="LinkedIn"></a>
+        <a href="https://www.tiktok.com/@bunny.developers"><img src="/img/tik-tok-icon.png" alt="TikTok"></a>
+        <a href="#"><img src="/img/insta-icon.png" alt="Instagram"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
