@@ -1,0 +1,127 @@
+[
+  {
+    "question": "Inside which HTML element do we put the JavaScript?",
+    "correct_answer": "<script>",
+    "incorrect_answers": ["<javascript>", "<js>", "<scripting>"]
+  },
+  {
+    "question": "What is the correct syntax for referring to an external script called 'xxx.js'?",
+    "correct_answer": "<script src='xxx.js'>",
+    "incorrect_answers": ["<script href='xxx.js'>", "<script name='xxx.js'>", "<script file='xxx.js'>"]
+  },
+  {
+    "question": "How do you write 'Hello World' in an alert box?",
+    "correct_answer": "alert('Hello World');",
+    "incorrect_answers": ["msgBox('Hello World');", "alertBox('Hello World');", "msg('Hello World');"]
+  },
+  {
+    "question": "Which HTML element is used to define the title of a document?",
+    "correct_answer": "<title>",
+    "incorrect_answers": ["<head>", "<meta>", "<header>"]
+  },
+  {
+    "question": "What does the <br> tag do?",
+    "correct_answer": "Inserts a single line break.",
+    "incorrect_answers": ["Inserts a horizontal rule.", "Creates a new paragraph.", "Inserts a space."]
+  },
+  {
+    "question": "Which HTML attribute specifies an alternate text for an image, if the image cannot be displayed?",
+    "correct_answer": "alt",
+    "incorrect_answers": ["src", "title", "longdesc"]
+  },
+  {
+    "question": "What is the correct HTML element for inserting a line break?",
+    "correct_answer": "<br>",
+    "incorrect_answers": ["<break>", "<lb>", "<newline>"]
+  },
+  {
+    "question": "Which HTML element defines navigation links?",
+    "correct_answer": "<nav>",
+    "incorrect_answers": ["<navigation>", "<links>", "<menu>"]
+  },
+  {
+    "question": "What is the purpose of the <head> element in HTML?",
+    "correct_answer": "Contains meta-information about the document.",
+    "incorrect_answers": ["Defines the main content of the document.", "Displays the document title.", "<body> content goes here."]
+  },
+  {
+    "question": "Which tag is used to create a checkbox in HTML?",
+    "correct_answer": "<input type='checkbox'>",
+    "incorrect_answers": ["<checkbox>", "<input type='check'>", "<checkBox>"]
+  },
+  {
+    "question": "What does the <footer> tag represent?",
+    "correct_answer": "The footer of a section or page.",
+    "incorrect_answers": ["The header of a section or page.", "A navigation menu.", "<aside> content."]
+  },
+  {
+    "question": "Which HTML element is used for defining an unordered list?",
+    "correct_answer": "<ul>",
+    "incorrect_answers": ["<ol>", "<li>", "<list>"]
+  },
+  {
+    "question": "How can you make a numbered list in HTML?",
+    "correct_answer": "<ol>",
+    "incorrect_answers": ["<ul>", "<list>", "<nl>"]
+  },
+  {
+    "question": "What is the purpose of the <meta> tag in HTML?",
+    "correct_answer": "To provide metadata about the HTML document.",
+    "incorrect_answers": ["To define styles for the document.", "<head> content.", "<body> content."]
+  },
+  {
+    "question":"Which attribute is used to specify that an input field must be filled out?",
+    "correct_answer": "'required'",
+    "incorrect_answers": ["placeholder", "validate", "mandatory"]
+  },
+  {
+  	"question":"What is the default value of the type attribute for <input> elements?",
+  	"correct_answer":"text",
+  	"incorrect_answers":["button","checkbox","submit"]
+  },
+  {
+  	"question":"Which HTML element is used to define a table row?",
+  	"correct_answer":"<tr>",
+  	"incorrect_answers":["<table-row>","<row>","<td>"]
+  },
+  {
+  	"question":"How do you create a hyperlink in HTML?",
+  	"correct_answer":"<a href='url'>link text</a>",
+  	"incorrect_answers":["<link href='url'>link text</link>","<a url='url'>link text</a>","<hyperlink href='url'>link text</hyperlink>"]
+  },
+  {
+  	"question":"Which tag is used to define an image in HTML?",
+  	"correct_answer":"<img>",
+  	"incorrect_answers":["<image>","<picture>","<src>"]
+  },
+  {
+  	"question":"What does the <section> tag represent in HTML5?",
+  	"correct_answer":"A thematic grouping of content.",
+  	"incorrect_answers":["A header section.","A footer section.","A sidebar section."]
+  },
+  {
+  	"question":"Which attribute specifies that an input field should be read-only?",
+  	"correct_answer":"readonly",
+  	"incorrect_answers":["disabled","locked","protected"]
+  },
+  {
+  	"question":"How do you specify a character set in your HTML document?",
+  	"correct_answer":"<meta charset='UTF-8'>",
+  	"incorrect_answers":["<meta charset='ASCII'>","<meta encoding='UTF-8'>","<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>"]
+  },
+  {
+  	"question":"What does the <aside> element represent?",
+  	"correct_answer":"Content related to the main content, like sidebars.",
+  	"incorrect_answers":["Main content area.","Footer content.","Header content."]
+  },
+  {
+  	"question":"Which tag is used to define a form in HTML?",
+  	"correct_answer":"<form>",
+  	"incorrect_answers":["<input-form>","<form-input>","<formdata>"]
+  },
+  {
+  	"question":"What does the <canvas> element do in HTML5?",
+  	"correct_answer":"It allows for dynamic, scriptable rendering of graphics.",
+  	"incorrect_answers":["It displays images only.","It creates tables.","It defines video elements."]
+  }
+]
