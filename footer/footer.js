@@ -1,12 +1,14 @@
-// Function to load footer
-function loadFooter() {
-  fetch('index.html')
-    .then(response => response.text())
-    .then(data => {
-      document.body.insertAdjacentHTML('beforeend', data);
-    })
-    .catch(error => console.error('Error loading footer:', error));
+console.log('Connected');
+const footer = document.getElementById('footer');
+// function to load footer
+const loadFooter = () => {
+  fetch('/footer/footer.html')
+  .then(res => res.text())
+  .then(data => {
+    footer.insertAdjacentHTML('beforeend', data);
+  })
+  .catch(error => console.error('Error loading footer:', error));
 }
 
-// Call the function to load footer
+//Call the function to load footer
 loadFooter();

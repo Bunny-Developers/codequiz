@@ -10,109 +10,42 @@
     <link rel="icon" type="image/x-icon" href="/img/code-master.jpg" />
     <title>High Scores</title>
     <!-- Bunny Developers Quick Quiz Game -->
-    <link rel="stylesheet" href="highscores.css" />
-  </head>
-  <body>
-    <style>
-      header {
-        display: flex;
-        background-color: #161d27;
-        color: white;
-        padding: 10px 20px;
-        text-align: center;
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-        width: 100%;
-        justify-content: space-around;
-        align-items: center;
-      }
-      .title {
-        margin: 0;
-        font-size: 2em;
-        font-variant: small-caps;
-      }
-      nav ul {
-        list-style-type: none;
-        padding: 0;
-      }
-      nav ul li {
-        display: inline;
-        margin-right: 15px;
-      }
-      nav ul li a {
-        color: white;
-        text-decoration: none;
-      }
-      main {
-        padding: 20px;
-      }
-      .container {
-        max-width: 800px;
-        margin: auto;
-      }
-      .highScores {
-        background-color: white;
-        padding: 20px;
-        border-radius: 5px;
-      }
-      .display {
-        font-size: 24px;
-        margin-bottom: 20px;
-      }
-      .btn {
-        display: inline-block;
-        background-color: #4CAF50;
-        color: white;
-        padding: 10px 15px;
-        text-decoration: none;
-        border-radius: 5px;
-      }
-      footer {
-        text-align: center;
-        padding: 10px 0;
-        background-color: #333;
-        color: white;
-      }
-    </style>
+  <link rel="stylesheet" href="/app.css" />
+  <link rel="stylesheet" href="highscore.css">
+</head>
+<body>
+  <div class="container">
     <header>
-      <h1 class="title">CodeMaster</h1>
-      <nav>
-        <ul>
-          <li><a href="https://bunny-developers.github.io/codequiz/">Home</a></li>
-          <li><a href="https://bunny-developers.github.io/codequiz/about/">About</a></li>
-        </ul>
-      </nav>
+      <div class="nav-wrapper">
+        <h1 class="logo">CodeMaster</h1>
+        <nav>
+          <ul id="nav-links">
+            <li><a href="https://bunny-developers.github.io/codequiz/">Home</a></li>
+            <li><a href="https://bunny-developers.github.io/codequiz/about/">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-      <h2 class="subtitle">High Scores</h2>
-      <p class="description">Check out the top scores from our players!</p>
-
-    <!-- <style>
-      @media (min-width :768px) {
-    .container {
-        height: calc(100vh - 138px);
-        margin: 32px auto;
-      }
-}
-    .container {
-        height: calc(100vh - 166px);
-      } 
-    </style> -->
-    <div class="container">
-      <div id="highScores" class="highScores">
-        <h1 id="finalScore" class="display">High Scores</h1>
-        <ul id="highScoresList"></ul>
-        
+      <div class="main-container">
+        <p class="description">Check out the top scores from our players!</p>
+        <div class="score-container">
+          <div id="highScores" class="highScores">
+            <h1 class="display" id="finalScore">High Scores</h1>
+            <ul id="highScoresList"></ul>
+          </div>
+          <a class="button" href="https://bunny-developers.github.io/codequiz/">🏠</a>
+        </div>
       </div>
-      <a class="btn" href="https://bunny-developers.github.io/codequiz/">Go Home</a>
-    </div>
     </main>
-    <footer>
-      <p>&copy; 2023 Bunny Developers. All rights reserved.</p>
-      <p>Follow us on <a href="https://twitter.com/BunnyDevTeam" target="_blank">Twitter</a> and <a href="https://www.instagram.com/BunnyDevTeam" target="_blank">Instagram</a>.</p>
-    </footer>
-    <script src="highscores.js"></script>
-    <script src="/footer/footer.js"></script>
-  </body>
+  <footer id="footer">
+    <!-- <p>&copy; 2023 Bunny Developers. All rights reserved.</p>
+    <p>Follow us on <a href="https://twitter.com/BunnyDevTeam" target="_blank">Twitter</a> and <a href="https://www.instagram.com/BunnyDevTeam" target="_blank">Instagram</a>.</p> -->
+  </footer>
+  </div>
+  <script src="highscores.js"></script>
+  <script src="/footer/footer.js"></script>
+</body>
 </html>

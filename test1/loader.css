@@ -1,0 +1,60 @@
+
+.highScores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+/* blinking text */
+.display {
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+        }
+
+
+/* LOADER */
+#loader {
+  border: 1.6rem solid white;
+  border-radius: 50%;
+  border-top: 1.6rem solid #56a5eb;
+  width: 12rem;
+  height: 12rem;
+  animation: spin 2s linear infinite;
+}
+
+
+@keyframes spin {
+    0% {
+        border-color: red;
+        transform: rotate(0deg);
+    }
+    25% {
+        border-color: yellow;
+        transform: rotate(90deg);
+    }
+    50% {
+        border-color: green;
+        transform: rotate(180deg);
+    }
+    75% {
+        border-color: blue;
+        transform: rotate(270deg);
+    }
+    100% {
+        border-color: red; /* Reset to the initial color */
+        transform: rotate(360deg);
+    }
+}
+

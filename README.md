@@ -54,18 +54,18 @@ HTMLquestions/
 
 1. **Clone or Download the Repository**
    ```
-   git clone <your-repo-url>
+   git clone https://github.com/bunny-developers/codequiz.git
    ```
 
 2. **Open in VS Code**
-   - Open the `HTMLquestions` folder in Visual Studio Code.
+   - Open the `codequiz` folder in Visual Studio Code.
 
 3. **Start Live Server**
    - Right-click `index.html` and select "Open with Live Server".
    - Or use the launch configuration in [`launch.json`](launch.json).
 
 4. **Play the Game**
-   - Visit `http://localhost:5500/HTMLquestions/index.html` in your browser.
+   - Visit `http://localhost:5500/codequiz/index.html` in your browser.
    - Click "Play" to start the quiz.
 
 ### File Overview
@@ -74,7 +74,7 @@ HTMLquestions/
 - [`test/index.html`](test/index.html): Main quiz interface.
 - [`test/game.js`](test/game.js): Loads questions, handles gameplay and scoring.
 - [`end.html`](end.html) & [`end.js`](end.js): End screen, save score.
-- [`highscores/highscores.html`](highscores/highscores.html) & [`highscores/highscores.js`](highscores/highscores.js): View high scores.
+- [`highscores/index.html`](highscores/highscores.html) & [`highscores/highscores.js`](highscores/highscores.js): View high scores.
 - [`footer/index.html`](footer/index.html), [`footer/footer.js`](footer/footer.js), [`footer/footer.css`](footer/footer.css): Footer component with social links.
 - [`questions.json`](questions.json): Question bank.
 

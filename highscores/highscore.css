@@ -1,0 +1,100 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+header {
+  background-color: #161d27;
+  color: white;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  margin: 0;
+}
+.logo {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  font-variant: small-caps;
+  user-select: none;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style-type: none;
+}
+nav ul li {
+  position: relative;
+}
+nav ul li a {
+  color: white;
+  font-weight: 600;
+  padding: 0.5rem 0;
+  display: block;
+  text-decoration: none;
+}
+main {
+  background-color: rgba(240, 248, 255, 0.281);
+  border-radius: 15px;
+  padding: 2rem;
+}
+.main-container {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+}
+.main-container p {
+  font-size: 1.5rem;
+}
+.subtitle,
+.description {
+  color: #666;
+}
+.score-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  margin: 3.5rem;
+  position: relative;
+}
+#highScores {
+  margin-bottom: 50px;
+}
+#highScoresList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.display {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+.button {
+  align-self: flex-end;
+  font-size: 2rem;
+  background-color: #884afc;
+  border-radius: 50%;
+  padding: 1rem;
+  right: 5px;
+  bottom: 5px;
+  position: absolute;
+}
+.footer-flex {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}

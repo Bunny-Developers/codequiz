@@ -5,6 +5,7 @@ const scoreText = document.getElementById('score');
 const progressBarFull = document.getElementById('progressBarFull');
 const loader = document.getElementById('loader');
 const game = document.getElementById('game');
+const cont = document.getElementById('cont');
 
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -51,6 +52,7 @@ startGame = () => {
   questionCounter = 0;
   score = 0;
   getNewQuestion();
+  cont.classList.remove('hidden');
   game.classList.remove('hidden');
   loader.classList.add('hidden'); // Hide loader when game starts
 };
@@ -108,7 +110,3 @@ incrementScore = (num) => {
   score += num;
   scoreText.innerText = (score) + '%';
 };
-
-
-
-

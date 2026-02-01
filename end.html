@@ -11,12 +11,24 @@
     <title>Congrats!</title>
     <link rel="stylesheet" href="app.css" />
   </head>
-  <body>
-    <div class="container">
+<body>
+  <style>
+    .container {
+      display: grid;
+      place-items: center;
+    }
+    .cont {
+      padding: 2rem;
+      height: 80dvh;
+    }
+  </style>
+  <div class="container">
+    <div class="cont">
       <div id="end" class="flex-center flex-column">
         <h1 id="finalScore"></h1>
-        <form>
-          <input style="font-size: small; border-radius: 15px;"
+        <div class="main-content">
+          <form>
+          <input style="font-size: small; border-radius: 15px 0 0;"
             type="text"
             name="username"
             id="username"
@@ -24,7 +36,7 @@
           />
           <button
             type="submit"
-            class="btn"
+            class="bttn"
             id="saveScoreBtn"
             onclick="saveHighScore(event)"
             disabled
@@ -32,11 +44,16 @@
             Save
           </button>
         </form>
-        <a class="btn" href="test/index.html">Play Again</a>
-        <a class="btn" href="index.html">Go Home</a>
+        <div class="nav-btn">
+          <a class="btn" href="test/index.html">Play</a>
+        <a class="btn" href="index.html">Home</a>
+        </div>
+        </div>
       </div>
     </div>
-    <script src="end.js"></script>
-    <script src="footer/footer.js"></script>
-  </body>
+    <footer class="footer" id="footer"></footer>
+  </div>
+  <script src="end.js"></script>
+  <script src="footer/footer.js"></script>
+</body>
 </html>

@@ -8,34 +8,33 @@
     <meta name="description" content="Home page for Bunny Developers' Quick Quiz game. Includes links to play the game and view high scores." />
     <meta name="keywords" content="home, Bunny Developers, Quiz app, test, programming, game, high scores" />
     <link rel="icon" type="image/x-icon" href="img/code-master.jpg" />
-    <title>Quick Quiz</title>
-    <link rel="stylesheet" href="app.css" />
-  </head>
+  <title>Quick Quiz</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
   <style>
-    body {
-      background: linear-gradient(#e4eafc, #e4eafc, #e4eafc, #e4eafc, #e4eafc, #e4eafc, #e4eafc, #e4eafc, #e4eafc, #e4eafc, #e4eafc, #e4eafc, #161d27, #161d27, #161d27);
+    .container {
+      display: grid;
+      place-items: center;
     }
-    @media (min-width :768px) {
-  .container {
+    .cont {
+      background-color: rgba(245, 245, 220, 0.342);
+      border-radius: 20px;
+      padding: 2rem;
       height: 300px;
-      background: url('img/code-master.jpg');
     }
-}
-  .container {
-      height: calc(100vh - 138px);
-      background: url('img/q-bg.jpg');
-      background-position: center;
-      background-size: cover;
-    } 
+    .cont h1 {
+      margin-bottom: 130px;
+    }
   </style>
-  <body>
-    <div class="container">
-      <div id="home" class="flex-center flex-column">
-        <h1>Quick Quiz</h1>
-        <a class="btn" href="test/">Play</a>
-        <a class="btn" href="highscores/">High Scores</a>
-      </div>
+  <div class="container">
+    <div class="cont flex-center flex=column" id="home">
+      <h1>Quick Quiz</h1>
+      <a href="test/index.html" class="btn">Play</a>
+      <a href="highscores/index.html" class="btn">high scores</a>
     </div>
-    <script src="footer/footer.js"></script>
-  </body>
+    <footer class="footer" id="footer"></footer>
+  </div>
+  <script src="footer/footer.js"></script>
+</body>
 </html>
