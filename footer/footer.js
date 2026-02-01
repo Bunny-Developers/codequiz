@@ -2,7 +2,7 @@ console.log('Connected');
 const footer = document.getElementById('footer');
 // function to load footer
 const loadFooter = () => {
-  fetch('/footer/footer.html')
+  fetch('https://bunny-developers.github.io/codequiz/footer/footer.html')
   .then(res => res.text())
   .then(data => {
     footer.insertAdjacentHTML('beforeend', data);
